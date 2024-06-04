@@ -1,0 +1,81 @@
+$color1:#b40eca;
+$color2:#ce7d03;
+$btntextcolor:azure;
+$btncolor:#179712;
+$addbtncolor:#06a086;
+$ToolBarColor:#393e46;
+$textAreaColor:#222831;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right bottom ,$color1,$color2);
+    #addbtn{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        color: $btntextcolor;
+        background-color:$btncolor ;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #addbtn:hover{
+        background-color: $addbtncolor;
+    }
+    #main{
+        min-height: 100vh;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .note{
+            width: 300px;
+            background-color:$ToolBarColor ;
+            margin: 15px;
+            border-radius:10px ;
+            box-shadow: 0 2px 6px rgba(0 ,0,0, 0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+            textarea{
+                border: none;
+                min-height: 220px;
+                resize: none;
+                padding: 10px;
+                font-size: 16px;
+                color: white;
+                background: transparent;
+                outline: none;
+            }
+            textarea:foucs{
+                outline: none;
+            }
+            .tool{
+                background-color: $textAreaColor;
+                color: white;
+                padding: 5px;
+                display: flex;
+                justify-content: flex-end;
+                i{
+                    padding: 5px;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                }
+                i:hover{
+                    color: #aca1a1;
+                }
+            }
+        }
+        .note:hover{
+            box-shadow: 0 4px 10px rgba(0, 0,0, 0.1) ;
+        }
+    }
+}

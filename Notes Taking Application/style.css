@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right bottom, #b40eca, #ce7d03);
+}
+
+body #register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body #register input, body #register button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+body #register input {
+  width: 300px;
+  height: 50px;
+
+}
+
+body #register button {
+  background-color: #179712;
+  color: azure;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body #register button:hover {
+  background-color: #06a086;
+}
+
+body #errorMsg {
+  color: black;
+}
+
+body #addbtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: azure;
+  background-color: #179712;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body #addbtn:hover {
+  background-color: #06a086;
+}
+
+body #main {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+body #main .note {
+  width: 300px;
+  background-color: #393e46;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+body #main .note textarea {
+  border: none;
+  min-height: 220px;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background: transparent;
+  outline: none;
+}
+
+body #main .note textarea:focus {
+  outline: none;
+}
+
+body #main .note .tool {
+  background-color: #222831;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body #main .note .tool i {
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+body #main .note .tool i:hover {
+  color: #aca1a1;
+}
+
+body #main .note:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
